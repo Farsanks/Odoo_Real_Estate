@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--    Main menu -->
+    <menuitem id="menu_estate_root" name="Real Estate" action="action_property"/>
+
+<!--    Sub menu -->
+
+    <menuitem id="menu_estate_submenu10" name="Configuration" parent="menu_estate_root" action="action_real_estate" sequence="20"/>
+    <menuitem id="menu_estate_submenu2" name="Property Types" parent="menu_estate_submenu10" action="estate_property_type_action" sequence="10"/>
+    <menuitem id="menu_estate_submenu3" name="Property Tags" parent="menu_estate_submenu10" action="action_tags" sequence="20"/>
+
+    <menuitem id="menu_estate_submenu" name="Properties" parent="menu_estate_root" sequence="10"/>
+    <menuitem id="menu_estate_submenu0" name="Properties" parent="menu_estate_submenu" action="action_property" sequence="10"/>
+
+
+</odoo>
